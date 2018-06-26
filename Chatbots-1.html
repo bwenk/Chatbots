@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>Chatbots</title>
+    <meta name="author" content="Bruno Wenk">
+    <meta name="date" content="2018-06-12">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+            h1,h2,h3,h4,h5 {font-family: 'Roboto', 'Verdana', sans-serif}
+            p {font-family: 'Raleway', 'Georgia', 'Palatino', sans-serif;}
+            p.typewriter {font-family: 'Special Elite', cursive;}
+            li {font-family: 'Raleway', 'Georgia', 'Palatino', sans-serif;} 
+        
+            /* Palette color codes */
+            /* Palette URL: http://paletton.com/#uid=31F0p0kbRt14+E48dwffUpTkImm */
+            .color-background { background-color: #E7E092 }
+            .color-header-text { color: #736DA1 }
+            .color-header { background-color: #AFACC7 }
+            .color-section { background-color: #FFFCD7 }
+    </style>
+  </head>
+  <body>
+    <div class="w3-content" style="max-width:1400px">
+
+      <!-- Header -->
+      <div class="w3-container w3-center w3-padding-hor-32 color-header-text">
+        <h1><b>Chatbots</b></h1>
+      </div>
+
+      <div class="w3-container w3-card-4 w3-text-darkgrey w3-padding-hor-32 w3-margin-top" style="width:80%; margin:auto;">
+      <!-- Objectives -->
+        <h3 class="color-header-text">Ziele</h3>
+        <ul>
+          <li>Kategorien von Chatbots unterscheiden und Anwendungsbereiche erläutern.</li>
+        </ul>
+      </div>
+
+      <!-- Table Of Contents -->
+      <div class="w3-container w3-card-4 w3-text-darkgrey w3-padding-hor-32 w3-margin-top" style="width:80%; margin:auto;">
+        <h3 id="Inhalt" class="color-header-text">Inhaltsverzeichnis</h3>
+        <ul>
+          <li><a href="#Einleitung">Was ist ein Chatbot?</a></li>
+          <li><a href="#Entwurf">Einen Chatbot entwerfen</a></li>
+          <li><a href="#Zukunft">Die Zukunft von Chatbots?</a></li>
+        </ul>
+      </div>
+
+      <!-- Section -->
+        <div class="w3-container w3-card-4 w3-margin-top w3-text-darkgrey" style="width:80%; margin:auto;">
+          <h2 class="color-header-text" id="Einleitung">Was ist ein Chatbot?</h2>
+            <p>Ein Chatbot (conversational bot) ist ein Programm, das auf der Basis von Regeln und (eventuell) künstlicher Intelligenz mit einem Menschen ein „Gespräch“ führen kann.</p>
+            <p>Es gibt unterschiedliche Ansätze, um Chatbots bezüglich ihrer Merkmale zu unterscheiden. Wir differenzieren hier nur zwischen Chatbots, die einen „offenen“ Dialog führen können und solchen, die nur zu einem bestimmten Thema „vernünftig“ auf die Eingaben der NutzerIn reagieren.</p>
+          <h3>Ein Chatbot mit offenem Dialog (Generalist)</h3>
+            <p>Der <a href="http://www.mitsuku.com/" target="_blank">Mitsuku Chatbot</a> ist ein sehr interessanter Chatbot mit offenem Dialog. Man kann sich mit dem Bot über ganz verschiedene Themen unterhalten.</p>
+            <p class="w3-center"><img src="https://res.cloudinary.com/bwe/image/upload/v1513326592/mitsuku_h6z202.png" alt="Screenshot Mitsuku Chatbot" width="50%"></p>
+            <p>Die nachfolgende Aufzeichnung eines Dialogs illustriert das Verhalten des Mitsuku Chatbots.</p>
+            <button class="w3-button color-section" onclick="document.getElementById('chatbotdialog').style.display='block'">Dialog anzeigen</button> 
+            <div id="chatbotdialog" class="w3-panel w3-border-left color-section w3-display-container" style="display:none">
+              <span onclick="this.parentElement.style.display='none'" class="w3-button color-background w3-display-topright"><b>x</b></span>
+              <p class="w3-small typewriter"> Human: my name is Bruno<br>
+                  <i>Mitsuku</i>: Your name is Bruno.<br> 
+                  Human: yes<br>
+                  <i>Mitsuku</i>: I am very pleased to meet you Bruno. My name is Mitsuku.<br>  
+                  Human: I know that; it is mentioned on your webpage<br>
+                  <i>Mitsuku</i>: Sorry. Should I know it is?<br>  
+                  Human: of course you should know your webpage<br>
+                  <i>Mitsuku</i>: I will ask my Mousebreaker to teach it to me. Now I do.<br>  
+                  Human: what topics are you interested in?<br>
+                  <i>Mitsuku</i>: Anything you like as long as it isn't rude.<br>  
+                  Human: what do you think about retirement?<br>
+                  <i>Mitsuku</i>: When you give up something, usually work when you are older.<br>  
+                  Human: exactly!<br>
+                  <i>Mitsuku</i>: You and I are on the same wavelength, Bruno.<br>  
+                  Human: what would you like to talk about?<br>
+                  <i>Mitsuku</i>: My favorite subjects are anything but especially games and football.<br>  
+                  Human: american football or soccer?<br>
+                  <i>Mitsuku</i>: Soccer. That's what we call football in England.<br>  
+                  Human: I played soccer until 2011<br>
+                  <i>Mitsuku</i>: Do you play soccer until 2011 professionally or just for fun?<br>  
+                  Human: just for fun, but seriously<br>
+                  <i>Mitsuku</i>: But what? You must like it then. Would you like to play soccer until 2011 professionally one day?<br>  
+                  Human: no, now I am playing volleyball<br>
+                  <i>Mitsuku</i>: Why not? Why now? Do you play professionally or just for fun?<br>  
+                  Human: just for fun and health<br>
+                  <i>Mitsuku</i>: Yes, that does sound like fun. I talk to people on the internet for fun.</p>
+            </div>
+            <p>Inwieweit ein conversational bot mit offenem Dialog menschliches Verhalten imitieren kann, wird mit dem sogenannten „Turing-Test“ ermittelt. Auf der Webseite des Mitsuku Chatbots kann man das <a href="http://www.square-bear.co.uk/mitsuku/turing" target="_blank">ausprobieren</a>:</p>
+            <p class="w3-center"><img src="https://res.cloudinary.com/bwe/image/upload/v1513350826/turingtest_dutacu.png" alt="Screenshot Turing Test auf der Website des Mitsuku Chatbot" width="50%"></p>
+            <p>Chatbots mit offenen Dialogen gibt es seit vielen Jahren. Sie wurden schon früher für die Kundenkommunikation genutzt (z.B. auf Webseiten von Bibliotheken und Krankenkassen). Deren Pflege war aber derart aufwändig, dass die Chatbots nach und nach wieder verschwanden.</p>
+            <h3>Chatbots für spezifische Aufgaben (Spezialisten)</h3>
+            <p>Chatbots, die nur zu spezifischen Themen und Fragen „vernünftige“ Antworten geben können, gewinnen momentan wieder an Bedeutung. Oft sind sie mit einem spezifischen Informationssytem verknüpft (z.B. Facebook oder Slack). Teilweise ersetzen sie lediglich herkömmliche FAQs; solche Bots sind oft gar nicht regelbasiert und nutzen auch keine Konzepte der künstlichen Intelligenz, um die Eingaben der NutzerInnen zu interpretieren.</p>
+            <p>Die Kommunikation mit Kunden (Support, Customer Relationship Management, Bestellwesen, usw.) steht im Zentrum der Anwendungen solcher Chatbots. Ein Beispiel dafür ist <a href="https://www.meetcleo.com/" target="_blank">Cleo</a>, ein persönlicher Finanzassistent:</p>
+            <p class="w3-center"><video width="187" controls><source src="https://res.cloudinary.com/bwe/video/upload/v1513352042/cleo_vyyepe.mp4" type="video/mp4"></video></p>
+            <p>Obwohl ein "echter" conversational bot für spezifische Aufgaben keinen offenen Dialog führen kann, erfolgt die Eingabe der NutzerIn in natürlicher Sprache. Natural Language Processing (NLP) dient dem Chatbot dazu, aus der Eingabe die betreffende Intention der NutzerIn zu erkennen und "vernünftig" zu reagieren. Eingestreut in den Dialog kann der Chatbot die Eingabe aber auch erleichtern, indem er eine beschränkte Auswahl an Möglichkeiten vorschlägt (z.B. einfach Ja/Nein). Falls der Chatbot aber bei jedem Schritt nur eine Auswahlliste präsentiert und die NutzerIn den Dialog jeweils mit einem Klick auf eines der Listenelemente (bzw. auf eine der Schaltflächen) weiterführen muss, kann man nicht mehr von einem conversational bot sprechen.</p>
+            <p class="w3-right w3-small color-header-text"><a href="#Inhalt">zum Inhaltsverzeichnis</a></p>
+        </div>
+        
+      <!-- Section -->
+        <div class="w3-container w3-card-4 w3-margin-top w3-text-darkgrey" style="width:80%; margin:auto;">
+          <h2 class="color-header-text" id="Entwurf">Einen Chatbot entwerfen</h2>
+            <p>Für den Entwurf eines Chatbots für eine spezifische Aufgabe sind Chatbot-Mockup-Tools (z.B. <a href="https://botmock.com" target="_blank">BotMock</a>) nützlich.</p>
+        </div>
+
+      <!-- Section -->
+        <div class="w3-container w3-card-4 w3-margin-top w3-text-darkgrey" style="width:80%; margin:auto;">
+          <h2 class="color-header-text" id="Zukunft">Die Zukunft von Chatbots?</h2>
+            <p>Es gibt die ExpertInnen, die vor Chatbots warnen, beispielsweise Evgeny Chereshnev vom Kaspersky-Lab: „Wie ein Chatbot die Weltherrschaft übernimmt“ (<a href="https://blog.kaspersky.de/dangerous-chatbot/8539/" target="_blank">https://blog.kaspersky.de/dangerous-chatbot/8539/</a>).</p>
+            <p>Und es gibt ExpertInnen, die überzeugt sind, dass Chatbots Webseiten und Apps ersetzen werden, beispielsweise Matt Schlicht im Chatbots Magazine: „How Bots Will Completely Kill Websites and Mobile Apps“ (<a href="https://chatbotsmagazine.com/how-bots-will-completely-kill-websites-and-mobile-apps-656db8e6fc03" target="_blank">https://chatbotsmagazine.com/how-bots-will-completely-kill-websites-and-mobile-apps-656db8e6fc03</a>).</p>
+            <p class="w3-right w3-small color-header-text"><a href="#Inhalt">zum Inhaltsverzeichnis</a></p>
+        </div>
+    
+    </div>
+    
+    <!-- END w3-content -->
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey w3-padding-hor-32 w3-margin-top">
+      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+    <script>
+    function accordionFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script> </body>
+</html>
